@@ -1,0 +1,21 @@
+body {
+    background: #051D3B;
+    overflow-y: scroll;
+    margin: 16px;
+}
+
+
+
+.containerHeader {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.leftHeader {
+    display: flex;
+    width: 96px;
+    justify-content: space-around;
+}

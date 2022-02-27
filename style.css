@@ -1,11 +1,12 @@
 body {
     background: #051D3B;
     overflow-y: scroll;
-    margin: 16px;
+    margin: 32px;
 }
-
-
-
+::placeholder{
+    color: #ffffff;
+    opacity: 0.64;
+}
 .containerHeader {
     display: flex;
     height: 56px;
@@ -14,8 +15,37 @@ body {
     margin-bottom: 40px;
 }
 
-.leftHeader {
+.container-logo{
+    width:21.666%;
     display: flex;
-    width: 96px;
-    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.searchBox {
+    width:52.22%;
+    height: 56px;
+    display:flex;  
+    padding: 0px;    
+}
+#searchInput{
+    flex-basis: 100% ;
+    padding:16px 14px 16px 14px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border:hidden;
+    flex-grow: 0;
+}
+
+
+
+.user-identificator{
+    width:21.6666%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+.user-identificator>p{
+
 }

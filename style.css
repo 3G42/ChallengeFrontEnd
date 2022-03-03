@@ -1,29 +1,39 @@
 body {
     background: #051D3B;
     overflow-y: scroll;
-    margin: 32px;
+    margin:0px 0px 0px 0px;
+
 }
 ::placeholder{
     color: #ffffff;
     opacity: 0.64;
 }
-.containerHeader {
+header {
     display: flex;
     height: 56px;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin: 2rem 2rem 2rem 1.5rem;
+    background: #051D3B;
 }
 
-.container-logo{
-    width:21.666%;
+#logoAlura{
+    width:145px;
+    height: 34.5px;
+    display: flex;    
+}
+.nav-list{
+    width:77.3255%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    
+}
+.icon-search{
+    display: none;
 }
 
 .searchBox {
-    width:52.22%;
+    width:70.67%;
     height: 56px;
     display:flex;  
     padding: 0px;    
@@ -36,16 +46,26 @@ body {
     border:hidden;
     flex-grow: 0;
 }
-
-
-
-.user-identificator{
-    width:21.6666%;
+#user-identificator{
+    width:10%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
-.user-identificator>p{
 
+
+@media(max-width:600px){
+    .nav-list{
+        justify-content: end;
+    }
+    .searchBox{
+        display:none;
+    }
+    .icon-search{
+        display:block
+    }
+    #user-identificator{
+        display:none
+    }
 }

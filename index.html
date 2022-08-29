@@ -11,23 +11,28 @@
 
 <body>
     <header>
-        <a id=logoAlura href="/">
-            <img src="img/Logo.svg" alt="Logo AluraDev" >
-        </a>
-        <nav class="nav-list" class="cabecalho-pagina">
-            <div class="icon-search"><img src="/img/iconSearch.svg" alt="Lupa"></div>
-            <div class="searchBox">
-                <input type="search" id="searchInput" placeholder="Busque por algo">
-            </div>
-            <div id ="user-identificator">
-                <img src="/img/Photo.png" alt="img">
-                <p id="userName">Harry</p>
-            </div>
-        </nav>
+      <a href="/" id="logo"><img src="/img/Logo.svg" alt="Logo"></a>
+      <input type="search" id="search-input" placeholder="Busque por algo">
+      <div id ="user-identificator">
+        <img src="/img/Photo.png" alt="img"><span id="userName">Harry</span>
+      </div>
+
     </header>
 
     <main>
-       
+       <nav class="sidebar-menu">
+         <div class="menu-title">Menu</div>
+         <div class="editor-codigo"><a href="/" class="link-active"><img src="/img/IconEditor.png" alt=""><span>Editor de Código</span></a></div>
+         <div class="comunity"><a href="comunity.html" ><img src="/img/IconComunity.png" alt=""><span>Comunidade</span></a></div>
+        </nav>
+        <div class="code-editor">
+            <div id="editor-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <textarea name="code-area" id="code-area" cols="50" rows="100"></textarea>
+        </div>
     </main>
 </body>
 
